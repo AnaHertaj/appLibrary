@@ -1,0 +1,122 @@
+body {
+  font: 14px Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: beige;
+}
+
+a {
+  color: #00B7FF;
+}
+
+p{
+  line-height: 2;
+  margin:2em 5em 1em;
+}
+
+.header{
+  /* background: url(../images/libraryop.jpg) no-repeat center center;
+  background-size:cover; */
+  background: #80062b;
+  height:150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:2em;
+}
+
+.header .title{
+  color:white;
+  font-size: xxx-large;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-align:center;
+  margin-bottom:0.5em;
+}
+
+.header .nav ul{
+ list-style-type: none;
+ display:flex;
+ flex-wrap: wrap;
+ padding: 0;
+}
+
+.header .nav ul li a{
+  color:white;
+  font-size:1em;
+  line-height: 2;;
+  font-weight:700;
+  margin:1em 2em;
+  text-decoration: none;
+ }
+ .header .nav ul li a:hover{
+   color:salmon;
+}
+.container{
+  max-width:100%;
+}
+
+.container .form, .container .home, .container .clients, .container .about{
+  max-width:80%;
+  margin:auto;
+}
+.container .home .image{
+  background: url(../images/libraryop.jpg) no-repeat center center;
+  background-size:cover;
+  height:150px;
+  margin:0;
+  padding:0;
+}
+
+.container .about .info{
+  margin:1em 5em; 
+  list-style-type: none;
+  padding:0;
+  display:flex;
+}
+
+.container .about .info li{
+  margin: 0.5em;
+}
+
+.form .btn{
+  color:white;
+  background-color:salmon;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  max-width: 95%;
+  margin: auto;
+}
+.form .btn:hover{
+  background-color: white;
+  border-color:salmon;
+  color:salmon;
+}
+.title-form{
+  text-align: center;
+  border-bottom: 2px solid salmon;
+  padding-bottom: 1em;
+  color:#80062b;
+}
+strong{
+  color:#80062b;
+}
+.form form{
+  max-width:80%;
+  margin:auto;
+}
+
+.enlace, .enlace:focus, .enlace:link{
+  color:salmon;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.enlace:hover{
+  color:indianred;
+}
+.separador{
+  margin:0 1em;
+  color:indianred;
+}

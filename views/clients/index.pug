@@ -1,0 +1,27 @@
+extends ../layout.pug
+
+block content
+    .clients
+        .row
+            .col-lg-12
+                h6.my-5.title-form 
+                    strong
+                        | List of clients
+
+        table.table.table-striped
+            thead
+                tr
+                    th Name
+                    th Surname
+                    th Client ID
+            tbody
+                each client in arrClients
+                    tr
+                        td= client.name
+                        td= client.surname
+                        td= client.idClient
+                else
+                    tr
+                        td(colspan="3") No hay clientes en la biblioteca
+       
+    

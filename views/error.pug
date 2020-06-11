@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .alert.alert-danger
+    //-h1= message
+    h2 ERROR 
+        span= error.status
+    small
+      pre #{error.stack}
