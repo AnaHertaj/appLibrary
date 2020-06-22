@@ -29,8 +29,8 @@ app.use((req,res,next) => {
     res.send("<div style='text-align:center;padding:2em'>" + "<h3>" + "It is " + (date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes() + "h." ) + "</h3>" + " Sorry : / No service available" + "<br>" + "<br>" + "Our customer service is from 8:00 to 17:00h. Thank you." + "</div>");
   } else {
     console.log( "Working time!" );
+    next(); //this must go here, thanks Mario!
   }
-  next();
 });
 
 //ROUTES\\
